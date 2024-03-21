@@ -6,13 +6,13 @@ import "../style/navigation.css";
 const Navigation = () => {
     return (
         <div className="navigation">
-            <img src={logo} alt="Logo"/>
-            <ul>
+            <img src={logo} className="logo" alt="Logo"/>
+            <ul className='links'>
                 <NavLink to="/">
-                    <li>Accueil</li>
+                    <li className='accueil'>Accueil</li>
                 </NavLink>
                 <NavLink to="/about">
-                    <li>A Propos</li>
+                    <li className='about'>A Propos</li>
                 </NavLink>
             </ul>
         </div>

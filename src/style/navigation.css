@@ -1,4 +1,30 @@
 .navigation {
     display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
+.links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.accueil {
+    padding-right: 3.125rem;
+    font-size: 24px;
+}
+
+.about {
+    padding-right: 8.75rem;
+    font-size: 24px;
+}
+
+.active {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.logo {
+    padding-left: 8.75rem;
+}
