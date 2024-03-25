@@ -1,0 +1,13 @@
+.image-container1 {
+    background: url("../image/Image2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(75%);
+    margin-top: 50px;
+    width: 1240px;
+    height: 223px;
+    margin-left: 8.75rem;
+    border-radius: 30px;
+    padding-top: 50px;
+}

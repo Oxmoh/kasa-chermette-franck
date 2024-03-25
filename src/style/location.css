@@ -1,0 +1,14 @@
+.background {
+    background-color: #F6F6F6;
+    width: 1240px;
+    height: 829px;
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 100px;
+}

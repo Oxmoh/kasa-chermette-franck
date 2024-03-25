@@ -1,0 +1,19 @@
+.image-container {
+    background: url("../image/image1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(75%);
+    margin-top: 50px;
+    width: 1240px;
+    height: 223px;
+    margin-left: 8.75rem;
+    border-radius: 30px;
+    padding-top: 50px;
+}
+
+.image-text {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
