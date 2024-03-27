@@ -1,4 +1,4 @@
-const fetchApi = async () => {   
+const getHouse = async () => {   
     try {
       const response = await fetch("../logements.json");
       return response.ok ? await response.json() : null;
@@ -9,4 +9,3 @@ const fetchApi = async () => {
   };
 
   
-
