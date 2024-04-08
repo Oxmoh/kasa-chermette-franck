@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(75%);
+    /* filter: brightness(75%); */
     margin-top: 50px;
     width: 1240px;
     height: 223px;
