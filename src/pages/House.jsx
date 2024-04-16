@@ -4,7 +4,8 @@ import Footer from '../components/Footer';
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from '../utils/Fetch';
 import { useEffect } from 'react';
-import SlideShow from '../components/Slider';
+import Slider from '../components/Slider';
+
 
 const House = () => {
     const { id } = useParams();
@@ -23,10 +24,10 @@ const House = () => {
 
 
     return (
-        <div product= {product}>
+        <div>
             <Navigation />
             <div className="product-container">
-                <SlideShow />
+                <Slider products= {product.pictures}/>
 
             </div>
             <Footer />
