@@ -1,0 +1,8 @@
+.star {
+    display: block;
+    width: 150px;
+  
+    img {
+      height: 30px;
+    }
+  }

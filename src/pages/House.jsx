@@ -5,6 +5,9 @@ import { useNavigate, useParams } from "react-router-dom";
 import useFetch from '../utils/Fetch';
 import { useEffect } from 'react';
 import Slider from '../components/Slider';
+import ProductsCollapses from '../components/Product-elements/ProductsCollapses';
+import ProductsHostRating from '../components/Product-elements/ProductsHostRating';
+import ProductsTitleTag from '../components/Product-elements/ProductsTitleTag';
 
 
 const House = () => {
@@ -15,20 +18,25 @@ const House = () => {
 
     useEffect(() => {
         if (data && (error || !data.find((element) => element.id === id))) {
-          navigate("/error");
+            navigate("/error");
         }
-      }, [data, error, id, navigate]);
-    
-      if (loading) return <div>Loading ...</div>;
-      if (error || !product) return null;
+    }, [data, error, id, navigate]);
+
+    if (loading) return <div>Loading ...</div>;
+    if (error || !product) return null;
 
 
     return (
         <div>
             <Navigation />
             <div className="product-container">
-                <Slider products= {product.pictures}/>
+                <Slider products={product.pictures} />
             </div>
+            {/* <div className="information-container"> */}
+                {/* <ProductsTitleTag className="title-tags-container" appart={appart} />
+                <ProductsHostRating className="host-rating-container" appart={appart} />
+            </div>
+            <ProductsCollapses className="collapses" appart={appart} id={id} /> */}
             <Footer />
         </div>
     );
