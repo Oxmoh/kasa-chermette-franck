@@ -28,7 +28,6 @@ const House = () => {
             <Navigation />
             <div className="product-container">
                 <Slider products= {product.pictures}/>
-
             </div>
             <Footer />
         </div>
